@@ -6,7 +6,7 @@
 
 |link|description|
 |-|-|
-|01|Library and driver sources<br>Pointer to implementation (PIMPL)<br>VS 2019 props, solution, projects<br>CMake scripts|
+|01|Library and driver sources; Pointer to implementation (PIMPL); VS 2019 property sheet, solution, projects; CMake scripts|
 
 <hr>
 
