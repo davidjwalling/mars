@@ -32,3 +32,19 @@ git add --all
 git commit -m"update"
 git push
 ```
+
+<hr>
+
+#### build
+Windows - x64 Native Tools Command Prompt for Visual Studio 2019
+```
+C:\repos\vole\01> msbuild Vole.sln /p:Platform=x64 /p:Configuration=Debug
+```
+Linux, macOS
+```
+$ cd 01
+$ mkdir build && cd build
+$ cmake ..
+$ make
+# sudo make install
+```
