@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
  
+include(GNUInstallDirs)
+
 set(CMAKE_CXX_STANDARD 14)
  
 if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
