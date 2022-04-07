@@ -43,6 +43,7 @@ C:\repos\vole\01> msbuild Vole.sln /p:Platform=x64 /p:Configuration=Debug
 Linux, macOS
 ```
 $ cd 01
+$ rm -rf build
 $ mkdir build && cd build
 $ cmake ..
 $ make
