@@ -6,7 +6,7 @@
 
 |link|description|
 |-|-|
-|01|a. library and driver<br>b. pointer to implementation<br>c. VS 2019 props, solution, projects|
+|01|a. library and driver<br>b. pointer to implementation (PIMPL)<br>c. VS 2019 props, solution, projects|
 
 <hr>
 
