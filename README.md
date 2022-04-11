@@ -36,8 +36,10 @@ git push
 <hr>
 
 #### build
-Windows - x64 Native Tools Command Prompt for Visual Studio 2019
+Windows 10  
+x64 Native Tools Command Prompt for Visual Studio 2019
 ```
+C:\repos\mars> cd 01
 C:\repos\mars\01> msbuild mars.sln /p:Platform=x64 /p:Configuration=Debug
 C:\repos\mars\01> msbuild mars.sln /p:Platform=x64 /p:Configuration=Release
 C:\repos\mars\01> msbuild mars.sln /p:Platform=x86 /p:Configuration=Debug
