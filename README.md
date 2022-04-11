@@ -2,7 +2,7 @@
 
 <hr>
 
-#### projects
+#### Projects
 
 |link|description|
 |-|-|
@@ -11,19 +11,19 @@
 <hr>
 
 #### git
-configure
+Configure
 ```
 git config --global user.name <user>
 git config --global user.email <email>
 git config --list
 ```
-localize
+Localize
 ```
 git clone https://github.com/davidjwalling/mars.git
 git remote -v
 git branch
 ```
-promote
+Promote
 ```
 git pull
 git status
@@ -35,7 +35,7 @@ git push
 
 <hr>
 
-#### build
+#### Build
 Windows 10  
 x64 Native Tools Command Prompt for Visual Studio 2019
 ```
