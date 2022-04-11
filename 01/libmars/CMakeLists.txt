@@ -19,26 +19,27 @@ add_library(libmars SHARED ${PROTO_SRCS})
  
 set_target_properties(libmars PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
 set_target_properties(libmars PROPERTIES PUBLIC_HEADER "${PROTO_HDRS}")
+set_target_properties(libmars PROPERTIES LIBRARY_OUTPUT_NAME mars)
  
 target_include_directories(libmars INTERFACE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
  
-install(TARGETS libmars EXPORT mars
+install(TARGETS libmars EXPORT libmars
     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
     RUNTIME       DESTINATION ${CMAKE_INSTALL_BINDIR}
     LIBRARY       DESTINATION ${CMAKE_INSTALL_LIBDIR}
     ARCHIVE       DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
  
-install(EXPORT mars
+install(EXPORT libmars
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/mars
     FILE MarsConfig.cmake
 )
  
 if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
     install(FILES libmars
-        $<TARGET_PDB_FILE:libmars> DESTINATION ${CMAKE_INSTALL_BINDIR} OPTIONAL
+        $<TARGET_PDB_FILE:mars> DESTINATION ${CMAKE_INSTALL_BINDIR} OPTIONAL
     )
 endif()
