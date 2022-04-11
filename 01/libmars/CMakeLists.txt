@@ -1,44 +1,44 @@
 cmake_minimum_required(VERSION 3.10)
  
-project(libvole)
+project(libmars)
  
 if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
     add_definitions(-D_WINDLL)
 endif()
  
 set(PROTO_SRCS
-    VoleDriver.cpp
+    driver.cpp
 )
  
 set(PROTO_HDRS
-    VoleAPI.h
-    VoleDriver.h
+    api.h
+    driver.h
 )
  
-add_library(libvole SHARED ${PROTO_SRCS})
+add_library(libmars SHARED ${PROTO_SRCS})
  
-set_target_properties(libvole PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
-set_target_properties(libvole PROPERTIES PUBLIC_HEADER "${PROTO_HDRS}")
+set_target_properties(libmars PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
+set_target_properties(libmars PROPERTIES PUBLIC_HEADER "${PROTO_HDRS}")
  
-target_include_directories(libvole INTERFACE
+target_include_directories(libmars INTERFACE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
  
-install(TARGETS libvole EXPORT vole
+install(TARGETS libmars EXPORT mars
     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
     RUNTIME       DESTINATION ${CMAKE_INSTALL_BINDIR}
     LIBRARY       DESTINATION ${CMAKE_INSTALL_LIBDIR}
     ARCHIVE       DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
  
-install(EXPORT vole
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/vole
-    FILE VoleConfig.cmake
+install(EXPORT mars
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/mars
+    FILE MarsConfig.cmake
 )
  
 if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
-    install(FILES libvole
-        $<TARGET_PDB_FILE:libvole> DESTINATION ${CMAKE_INSTALL_BINDIR} OPTIONAL
+    install(FILES libmars
+        $<TARGET_PDB_FILE:libmars> DESTINATION ${CMAKE_INSTALL_BINDIR} OPTIONAL
     )
 endif()

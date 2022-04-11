@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvole", "libvole\libvole.vcxproj", "{C02CB202-78C8-446C-88AD-C700A6BAAC93}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libmars", "libmars\libmars.vcxproj", "{C02CB202-78C8-446C-88AD-C700A6BAAC93}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vole", "vole\vole.vcxproj", "{8D126011-2705-4525-A00C-AA608D10D42A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mars", "mars\mars.vcxproj", "{8D126011-2705-4525-A00C-AA608D10D42A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

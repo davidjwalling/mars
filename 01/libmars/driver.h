@@ -1,8 +1,8 @@
 #pragma once
-#include "VoleAPI.h"
+#include "api.h"
 #include <memory>
 
-namespace Vole {
+namespace mars {
 class IDriver
 {
     class Driver;

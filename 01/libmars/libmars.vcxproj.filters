@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="VoleDriver.cpp">
+    <ClCompile Include="driver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="VoleAPI.h">
+    <ClInclude Include="api.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="VoleDriver.h">
+    <ClInclude Include="driver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

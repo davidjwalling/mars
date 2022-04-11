@@ -1,6 +1,6 @@
-#include "VoleDriver.h"
+#include "driver.h"
 
-using namespace Vole;
+using namespace mars;
 
 int main(int argc, char *argv[])
 {

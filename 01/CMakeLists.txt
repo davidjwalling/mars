@@ -24,5 +24,5 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
     )
 endif()
  
-add_subdirectory(libvole)
-add_subdirectory(vole)
+add_subdirectory(libmars)
+add_subdirectory(mars)
