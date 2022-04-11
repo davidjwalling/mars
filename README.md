@@ -19,7 +19,7 @@ git config --list
 ```
 localize
 ```
-git clone https://github.com/davidjwalling/vole.git
+git clone https://github.com/davidjwalling/mars.git
 git remote -v
 git branch
 ```
@@ -38,7 +38,7 @@ git push
 #### build
 Windows - x64 Native Tools Command Prompt for Visual Studio 2019
 ```
-C:\repos\vole\01> msbuild Vole.sln /p:Platform=x64 /p:Configuration=Debug
+C:\repos\mars\01> msbuild mars.sln /p:Platform=x64 /p:Configuration=Debug
 ```
 Linux, macOS
 ```
