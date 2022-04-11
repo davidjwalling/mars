@@ -43,7 +43,7 @@ C:\repos\mars\01> msbuild mars.sln /p:Platform=x64 /p:Configuration=Release
 C:\repos\mars\01> msbuild mars.sln /p:Platform=x86 /p:Configuration=Debug
 C:\repos\mars\01> msbuild mars.sln /p:Platform=x86 /p:Configuration=Release
 ```
-Linux, macOS
+Linux
 ```
 $ cd 01
 $ rm -rf build
@@ -52,4 +52,13 @@ $ cmake ..
 $ make
 $ sudo make install
 $ sudo ldconfig
+```
+macOS
+```
+$ cd 01
+$ rm -rf build
+$ mkdir build && cd build
+$ cmake ..
+$ make
+$ sudo make install
 ```
