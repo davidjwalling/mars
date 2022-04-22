@@ -88,7 +88,7 @@ README.md
 ### Build
 #### Windows 10 with CMake -G "Visual Studio 16 2019"
 - Install CMake (kitware.com/cmake)
-- Add "C:\Program Files (x64)\MARS\bin" to your system path
+- Add "C:\Program Files (x86)\MARS\bin" to your system path
 - Open a standard Command Prompt as Administrator
 
 ![Command Prompt as Admin](https://github.com/davidjwalling/mars/blob/main/images/Command-Prompt-as-Administrator.png?raw=true)
@@ -146,7 +146,7 @@ C:\repos\mars\02\build> mars
 Hello, Driver!
 ```
 #### Windows 10 with CMake -G "NMake Makefiles"
-- Add "C:\Program Files (x64)\MARS\bin" to your system path
+- Add "C:\Program Files (x86)\MARS\bin" to your system path
 - Open an x64 Native Tools Command Prompt for Visual Studio 2019 window _as Administrator_
 
 ![x64 Native Tools as Admin](https://github.com/davidjwalling/mars/blob/main/images/x64-Native-Tools-Command-Prompt-for-VS-2019-as-Administrator.png?raw=true)
@@ -174,7 +174,7 @@ C:\repos\mars\02\build> cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Debug ..
 
 ![NMake Install](https://github.com/davidjwalling/mars/blob/main/images/NMake-Install.png?raw=true)
 #### Windows 10 with CMake -G "Ninja"
-- Add "C:\Program Files (x64)\MARS\bin" to your system path
+- Add "C:\Program Files (x86)\MARS\bin" to your system path
 - Open an x64 Native Tools Command Prompt for Visual Studio 2019 window _as Administrator_
 
 ![x64 Native Tools as Admin](https://github.com/davidjwalling/mars/blob/main/images/x64-Native-Tools-Command-Prompt-for-VS-2019-as-Administrator.png?raw=true)
