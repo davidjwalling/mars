@@ -11,4 +11,4 @@
 
 <hr>
 
-![RTFM](MANUAL.md)
+![RTFM](https://github.com/davidjwalling/mars/blob/main/MANUAL.md)
