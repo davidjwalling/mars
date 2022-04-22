@@ -1,13 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
- 
-project(MARS)
 
-include(GNUInstallDirs)
+project(MARS)
 
 set(CMAKE_CXX_STANDARD 14)
  
 if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
-    add_definitions(
+	add_definitions(
         -D_WIN32_WINNT=0x0601
         -DNOMINMAX
         -DVC_EXTRALEAN
@@ -20,6 +18,8 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
 endif()
  
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
+    include(GNUInstallDirs)
+
     add_compile_options(
         -fvisibility=hidden
         -Wno-deprecated-declarations

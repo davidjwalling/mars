@@ -4,6 +4,6 @@ root = true
 indent_style = tab
 indent_size = 4
 
-[*.{cpp,h}]
+[*.{cpp,h,md}]
 indent_style = space
 indent_size = 4
