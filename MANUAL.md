@@ -64,6 +64,8 @@ C:\repos\mars\01> msbuild mars.sln /p:Platform=x86 /p:Configuration=Release
 This chapter adds CMake files for the library and driver and for the top-level project. With CMake, we can build the project with several different generators. We'll show examples using "Ninja", "NMake Makefiles" and "Visual Studio 16 2019" generators.  
 
 For Windows builds, When building within a Visual Studio environment, such as x64 Native Tools, CMake and Ninja are provided. Be aware of the versions shipped with the compiler. When building from a standard command prompt, a separately-installed version of CMake might run, depending on your PATH settings.
+
+For Linux and macOS builds, CMake will identify the GCC or CLang compiler as usual.
 ### Files
 ```
 02 ---+--- libmars ------- CMakeLists.txt              <--- new
@@ -214,3 +216,50 @@ C:\repos\mars\02\build>cmake --build . --config Debug --target install
 C:\repos\mars\02\build>mars
 Hello, Driver!
 ```
+#### Ubuntu Linux 20.04
+```
+osboxes@osboxes:~/repos/mars/02$ mkdir build && cd build
+osboxes@osboxes:~/repos/mars/02/build$ cmake ..
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/osboxes/repos/mars/02/build
+```
+
+![osboxes cmake](https://github.com/davidjwalling/mars/blob/main/images/osboxes-cmake.png?raw=true)
+
+#### macOS Big Sur version 11.6.5
+```
+me@Mes-MacBook-Pro 02 % mkdir build && cd build
+me@Mes-MacBook-Pro build % cmake ..
+-- The C compiler identification is AppleClang 13.0.0.13000029
+-- The CXX compiler identification is AppleClang 13.0.0.13000029
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/me/repos/mars/02/build
+```
+
+![macos cmake](https://github.com/davidjwalling/mars/blob/main/images/macos-cmake.png?raw=true)
