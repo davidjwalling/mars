@@ -11,6 +11,10 @@
 
 <hr>
 
+![RTFM](MANUAL.md)
+
+<hr>
+
 #### Build
 Linux
 ```
