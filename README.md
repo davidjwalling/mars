@@ -12,7 +12,6 @@
 <hr>
 
 #### Build
-```
 Linux
 ```
 $ cd 01
