@@ -41,6 +41,6 @@ install(EXPORT libmars
 if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
     install(FILES libmars
         $<TARGET_PDB_FILE:libmars> DESTINATION ${CMAKE_INSTALL_BINDIR} OPTIONAL
-		TYPE BIN
+        TYPE BIN
     )
 endif()
