@@ -12,26 +12,3 @@
 <hr>
 
 ![RTFM](MANUAL.md)
-
-<hr>
-
-#### Build
-Linux
-```
-$ cd 01
-$ rm -rf build
-$ mkdir build && cd build
-$ cmake ..
-$ make
-$ sudo make install
-$ sudo ldconfig
-```
-macOS
-```
-$ cd 01
-$ rm -rf build
-$ mkdir build && cd build
-$ cmake ..
-$ make
-$ sudo make install
-```
