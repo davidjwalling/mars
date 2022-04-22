@@ -1,12 +1,14 @@
 ### Mars
-Technical Manual  
-22 April 2022  
+
 <hr>
 
 ### Chapter 1
+This first chapter introduces an absurdly simple library and driver in C++ with Microsoft Visual Studio 2019 solution, properties and project files. The .editorconfig file defines some basic text formatting rules for .cpp, .h, .txt files versus Makefile files. The .gitignore file helps prevent committing compiled artifacts.  
+
+The public API (api.h, driver.h) exposes the public sample interface class "IDriver". The Pointer-to-Implementation (PIMPL) technique is implemented by declaring a singleton instance of the internal Driver class which is encapsulated in driver.cpp. The implication here, is that Driver is not exposed to even other private classes, which must rely on the public interface class IDriver.
 #### Files
 ```
-01 ------- libmars ------- api.h
+01 ---+--- libmars ------- api.h
       |               +--- driver.dpp
       |               +--- driver.h
       |               +--- libmars.vcxproj
@@ -51,13 +53,6 @@ Windows 10
 ![](https://github.com/davidjwalling/mars/blob/main/images/x64-Native-Tools-Command-Prompt-for-VS-2019.png?raw=true)
 
 ```
-**********************************************************************
-** Visual Studio 2019 Developer Command Prompt v16.11.11
-** Copyright (c) 2021 Microsoft Corporation
-**********************************************************************
-[vcvarsall.bat] Environment initialized for: 'x64'
-
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community>cd \repos\mars\01
 C:\repos\mars\01> msbuild mars.sln /p:Platform=x64 /p:Configuration=Debug
 C:\repos\mars\01> msbuild mars.sln /p:Platform=x64 /p:Configuration=Release
 C:\repos\mars\01> msbuild mars.sln /p:Platform=x86 /p:Configuration=Debug
