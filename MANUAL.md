@@ -9,7 +9,7 @@ The public API (api.h, driver.h) exposes the public sample interface class "IDri
 ### Files
 ```
 01 ---+--- libmars ------- api.h
-      |               +--- driver.dpp
+      |               +--- driver.cpp
       |               +--- driver.h
       |               +--- libmars.vcxproj
       |               +--- libmars.vcxproj.filters
